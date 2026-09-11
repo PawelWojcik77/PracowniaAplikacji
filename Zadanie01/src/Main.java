@@ -41,7 +41,7 @@ void main() {
 
     System.out.println("Podaj wyraz:");
     String wyraz = scanner.next();
-    System.out.println("Liczba znaków: " + wyraz.length());
+    System.out.println("Liczba znaków:" + wyraz.length());
 
     int x = 5;
     double y = 2;
@@ -51,6 +51,11 @@ void main() {
     System.out.println("Podaj słowo:");
     String slowo = scanner.next();
     System.out.println(slowo.toUpperCase());
+
+    System.out.print("Podaj promień koła (liczba całkowita):");
+    int promien = scanner.nextInt();
+    double pole = Math.PI * promien * promien;
+    System.out.println("Pole koła o promieniu" + promien + "wynosi:" + pole);
 
 
 
