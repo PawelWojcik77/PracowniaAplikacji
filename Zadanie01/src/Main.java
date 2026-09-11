@@ -37,6 +37,13 @@ void main() {
     System.out.println("Podaj trzecie słowo:");
     String slowo3 = scanner.nextLine();
     System.out.println(slowo3 + "," + slowo2 + "," + slowo1);
+
+
+    System.out.println("Podaj wyraz:");
+    String wyraz = scanner.next();
+    System.out.println("Liczba znaków: " + wyraz.length());
+
+
 }
 
 
