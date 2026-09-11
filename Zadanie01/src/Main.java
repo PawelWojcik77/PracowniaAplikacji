@@ -48,6 +48,10 @@ void main() {
     double wynik = x / y;
     System.out.println(wynik);
 
+    System.out.println("Podaj słowo:");
+    String slowo = scanner.next();
+    System.out.println(slowo.toUpperCase());
+
 
 
 }
