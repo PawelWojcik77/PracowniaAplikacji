@@ -28,4 +28,15 @@ void main() {
     double obwod = a + b + c;
     System.out.println("Obwód trójkąta wynosi: " + obwod);
 
+
+    scanner.nextLine();
+    System.out.println("Podaj pierwsze słowo:");
+    String slowo1 = scanner.nextLine();
+    System.out.println("Podaj drugie słowo:");
+    String slowo2 = scanner.nextLine();
+    System.out.println("Podaj trzecie słowo:");
+    String slowo3 = scanner.nextLine();
+    System.out.println(slowo3 + "," + slowo2 + "," + slowo1);
 }
+
+
