@@ -158,6 +158,46 @@ import java.util.Scanner;
         }
 
 
+        //Zadanie10
+
+        System.out.println("Zadanie 10");
+        double cena;
+        int liczbaRat;
+        do {
+            System.out.print("Podaj cenę towaru (100 - 10000 zł): ");
+            cena = scanner.nextDouble();
+            if (cena < 100 || cena > 10000) {
+                System.out.println("Błędna cena. Spróbuj ponownie.");
+            }
+        } while (cena < 100 || cena > 10000);
+        do {
+            System.out.print("Podaj liczbę rat (6 - 48): ");
+            liczbaRat = scanner.nextInt();
+            if (liczbaRat < 6 || liczbaRat > 48) {
+                System.out.println("Błędna liczba rat. Spróbuj ponownie.");
+            }
+        } while (liczbaRat < 6 || liczbaRat > 48);
+        double oprocentowanie;
+        if (liczbaRat <= 12) {
+            oprocentowanie = 0.025;
+        } else if (liczbaRat <= 24) {
+            oprocentowanie = 0.05;
+        } else {
+            oprocentowanie = 0.10;
+        }
+        double kwotaZOdsetkami = cena + cena * oprocentowanie;
+        double rata = kwotaZOdsetkami / liczbaRat;
+
+        System.out.println("Cena towaru: " + cena + " zł");
+        System.out.println("Liczba rat: " + liczbaRat);
+        System.out.println("Oprocentowanie: " + (oprocentowanie * 100) + "%");
+        System.out.println("Miesięczna rata: " + rata + " zł");
+
+
+
+
+
+
 
 
 
