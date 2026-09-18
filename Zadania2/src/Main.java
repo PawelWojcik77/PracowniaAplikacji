@@ -130,6 +130,18 @@ import java.util.Scanner;
         System.out.println("Użytkownik jest pełnoletni? " + pelnoletni);
 
 
+        //Zadanie8
+        System.out.println("Zadanie 8");
+        System.out.print("Podaj rok: ");
+        int rok = scanner.nextInt();
+        if ((rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0) {
+            System.out.println("Podany rok jest rokiem przestępnym.");
+        } else {
+            System.out.println("Podany rok nie jest rokiem przestępnym.");
+        }
+
+
+
 
 
 
