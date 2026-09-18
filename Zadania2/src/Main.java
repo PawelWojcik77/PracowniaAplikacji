@@ -45,6 +45,27 @@ import java.util.Scanner;
 
 
 
+        // Zadanie 4
+        System.out.println("Zadanie 4");
+        System.out.println("Podaj pierwsza liczbe:");
+        int liczba3 = scanner.nextInt();
+        System.out.println("Podaj druga liczbe:");
+        int liczba4 = scanner.nextInt();
+        System.out.println("Podaj trzecia liczbe:");
+        int liczba5 = scanner.nextInt();
+        int najwieksza = liczba3;
+        if (liczba4 > najwieksza) {
+            najwieksza = liczba4;
+        }
+        if (liczba5 > najwieksza) {
+            najwieksza = liczba5;
+        }
+        System.out.println("Najwieksza liczba to: " + najwieksza);
+
+
+
+
+
         scanner.close();
 
 }
