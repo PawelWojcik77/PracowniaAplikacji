@@ -141,6 +141,25 @@ import java.util.Scanner;
         }
 
 
+        //Zadanie 9
+        System.out.println("Zadanie 9");
+        System.out.print("Podaj wagę w kg: ");
+        double waga = scanner.nextDouble();
+        System.out.print("Podaj wzrost w centymetrach: ");
+        double wzrost = scanner.nextDouble();
+        double bmi = waga / (wzrost * wzrost);
+        System.out.println("BMI: " + bmi);
+        if (bmi < 18.5) {
+            System.out.println("niedowaga");
+        } else if (bmi <= 24.9) {
+            System.out.println("waga prawidłowa");
+        } else {
+            System.out.println("nadwaga");
+        }
+
+
+
+
 
 
 
