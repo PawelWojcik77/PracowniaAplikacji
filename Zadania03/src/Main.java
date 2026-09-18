@@ -26,5 +26,21 @@ void main() {
             potega = potega * 2;
     }
 
+        //Zadanie3
+        System.out.println("Zadanie 3");
+        int suma = 0;
+        System.out.print("Podaj liczbe: ");
+        liczba = scanner.nextInt();
+        while (liczba != 0) {
+        suma = suma + liczba;
+        System.out.print("Podaj liczbe: ");
+        liczba = scanner.nextInt();
+    }
+    System.out.println("Suma: " + suma);
+
+
+
+
+
 
 }
