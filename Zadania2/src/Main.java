@@ -122,6 +122,18 @@ import java.util.Scanner;
         }
 
 
+        //Zadanie 7
+        System.out.println("Zadanie 7");
+        System.out.print("Podaj wiek: ");
+        int wiek = scanner.nextInt();
+        boolean pelnoletni = wiek >= 18 ? true : false;
+        System.out.println("Użytkownik jest pełnoletni? " + pelnoletni);
+
+
+
+
+
+
 
 
 
