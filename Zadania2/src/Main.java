@@ -109,6 +109,19 @@ import java.util.Scanner;
         }
 
 
+        //Zadanie 6
+        System.out.println("Zadanie 6");
+        scanner.nextLine();
+        System.out.println("Podaj swoje imie:");
+        String imie = scanner.nextLine();
+        String mojeImie = "Pawel";
+        if (mojeImie.equals(imie)) {
+            System.out.println("Masz takie samo imie jak ja.");
+        } else {
+            System.out.println("Masz inne imie niz ja.");
+        }
+
+
 
 
 
