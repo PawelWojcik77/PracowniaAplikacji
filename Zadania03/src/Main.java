@@ -16,6 +16,15 @@ void main() {
 
     }
 
+        //zadanie 2
+        System.out.println("Zadanie 2");
+        System.out.print("Podaj liczbe: ");
+        liczba = scanner.nextInt();
+        int potega = 1;
+        while (potega <= liczba) {
+            System.out.println(potega);
+            potega = potega * 2;
+    }
 
 
 }
