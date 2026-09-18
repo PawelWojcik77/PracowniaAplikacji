@@ -3,11 +3,19 @@
 void main() {
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+        // Zadanie 1
+        System.out.println("Zadanie 1");
+        System.out.print("Podaj liczbe: ");
+        Scanner scanner = new Scanner(System.in);
+        int liczba = scanner.nextInt();
+        int i = 1;
+        while (i <= liczba) {
+            System.out.println(i);
+            i = i + 2;
+
     }
+
+
+
 }
