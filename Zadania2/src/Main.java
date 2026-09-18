@@ -145,7 +145,7 @@ import java.util.Scanner;
         System.out.println("Zadanie 9");
         System.out.print("Podaj wagę w kg: ");
         double waga = scanner.nextDouble();
-        System.out.print("Podaj wzrost w centymetrach: ");
+        System.out.print("Podaj wzrost: ");
         double wzrost = scanner.nextDouble();
         double bmi = waga / (wzrost * wzrost);
         System.out.println("BMI: " + bmi);
@@ -159,7 +159,6 @@ import java.util.Scanner;
 
 
         //Zadanie10
-
         System.out.println("Zadanie 10");
         double cena;
         int liczbaRat;
@@ -195,18 +194,40 @@ import java.util.Scanner;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+        //Zadanie11
+        System.out.println("Zadanie 11");
+        System.out.println("kalkulator");
+        System.out.print("Podaj pierwszą liczbę: ");
+        double liczba7 = scanner.nextDouble();
+        System.out.print("Podaj symbol działania (+, -, *, /): ");
+        String znak = scanner.next();
+        System.out.print("Podaj drugą liczbę: ");
+        double liczba8 = scanner.nextDouble();
+        double wynik;
+        switch (znak) {
+            case "+":
+                wynik = liczba7 + liczba8;
+                System.out.println("Wynik: " + wynik);
+                break;
+            case "-":
+                wynik = liczba7 - liczba8;
+                System.out.println("Wynik: " + wynik);
+                break;
+            case "*":
+                wynik = liczba7 * liczba8;
+                System.out.println("Wynik: " + wynik);
+                break;
+            case "/":
+                if (liczba7 == 0) {
+                    System.out.println("Nie można dzielić przez zero.");
+                } else {
+                    wynik = liczba7 / liczba8;
+                    System.out.println("Wynik: " + wynik);
+                }
+                break;
+            default:
+                System.out.println("Błędny symbol działania.");
+        }
 
 
         scanner.close();
