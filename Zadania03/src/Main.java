@@ -158,4 +158,27 @@ void main() {
 
 
 
+    //Zadanie7
+    System.out.println("Zadanie 7");
+
+    System.out.print("Podaj wysokość choinki: ");
+    int wysokosc7 = scanner.nextInt();
+
+    for (int wiersz7 = 1; wiersz7 <= wysokosc7; wiersz7++) {
+
+        for (int spacja7 = 1; spacja7 <= wysokosc7 - wiersz7; spacja7++) {
+            System.out.print(" ");
+        }
+
+        for (int gwiazdka7 = 1; gwiazdka7 <= 2 * wiersz7 - 1; gwiazdka7++) {
+            System.out.print("*");
+        }
+
+        System.out.println();
+    }
+
+
+
+
+
 }
