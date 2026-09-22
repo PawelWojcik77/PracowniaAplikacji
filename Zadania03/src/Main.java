@@ -177,6 +177,22 @@ void main() {
         System.out.println();
     }
 
+    //zadanie8
+
+    System.out.println("Zadanie 8");
+
+    System.out.print("Podaj liczbę: ");
+    int liczba8 = scanner.nextInt();
+
+    int silnia8 = 1;
+
+    for (int i8 = 1; i8 <= liczba8; i8++) {
+        silnia8 = silnia8 * i8;
+    }
+
+    System.out.println("Silnia: " + silnia8);
+
+
 
 
 
