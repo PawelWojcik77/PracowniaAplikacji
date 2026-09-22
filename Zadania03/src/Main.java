@@ -94,28 +94,21 @@ void main() {
 
     //Zadanie5
     System.out.println("Zadanie 5");
-
     int wylosowana5 = (int) (Math.random() * 100) + 1;
     int podana5;
-
     System.out.println("Zgadnij liczbę od 1 do 100.");
-
     podana5 = scanner.nextInt();
-
     while (podana5 != wylosowana5) {
-
         if (podana5 > wylosowana5) {
             System.out.println("Podałeś za dużą wartość");
         }
-
         if (podana5 < wylosowana5) {
             System.out.println("Podałeś za małą wartość");
         }
-
         podana5 = scanner.nextInt();
     }
-
     System.out.println("Gratulacje");
+
 
     //Zadanie6
     System.out.println("Zadanie 6");
@@ -160,40 +153,44 @@ void main() {
 
     //Zadanie7
     System.out.println("Zadanie 7");
-
     System.out.print("Podaj wysokość choinki: ");
     int wysokosc7 = scanner.nextInt();
-
     for (int wiersz7 = 1; wiersz7 <= wysokosc7; wiersz7++) {
-
         for (int spacja7 = 1; spacja7 <= wysokosc7 - wiersz7; spacja7++) {
             System.out.print(" ");
         }
-
         for (int gwiazdka7 = 1; gwiazdka7 <= 2 * wiersz7 - 1; gwiazdka7++) {
             System.out.print("*");
         }
-
         System.out.println();
     }
 
     //zadanie8
-
     System.out.println("Zadanie 8");
-
     System.out.print("Podaj liczbę: ");
     int liczba8 = scanner.nextInt();
-
     int silnia8 = 1;
-
     for (int i8 = 1; i8 <= liczba8; i8++) {
         silnia8 = silnia8 * i8;
     }
-
     System.out.println("Silnia: " + silnia8);
 
 
-
+    //Zadanie9
+    System.out.println("Zadanie 9");
+    System.out.print("Podaj słowo: ");
+    String slowo9 = scanner.next();
+    boolean palindrom9 = true;
+    for (int i9 = 0; i9 < slowo9.length() / 2; i9++) {
+        if (slowo9.charAt(i9) != slowo9.charAt(slowo9.length() - 1 - i9)) {
+            palindrom9 = false;
+        }
+    }
+    if (palindrom9) {
+        System.out.println("Podane słowo jest palindromem.");
+    } else {
+        System.out.println("Podane słowo nie jest palindromem.");
+    }
 
 
 
