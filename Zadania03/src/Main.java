@@ -40,6 +40,82 @@ void main() {
 
 
 
+        //Zadanie4
+    System.out.println("Zadanie 4");
+
+    int liczba4;
+    int suma4 = 0;
+    int ilosc4 = 0;
+    int najmniejsza4 = 0;
+    int najwieksza4 = 0;
+
+    System.out.println("Podawaj liczby całkowite.");
+    System.out.println("Podaj 0, aby zakończyć.");
+
+    System.out.print("Podaj liczbę: ");
+    liczba4 = scanner.nextInt();
+
+    while (liczba4 != 0) {
+
+        if (ilosc4 == 0) {
+            najmniejsza4 = liczba4;
+            najwieksza4 = liczba4;
+        }
+
+        if (liczba4 < najmniejsza4) {
+            najmniejsza4 = liczba4;
+        }
+
+        if (liczba4 > najwieksza4) {
+            najwieksza4 = liczba4;
+        }
+
+        suma4 = suma4 + liczba4;
+        ilosc4 = ilosc4 + 1;
+
+        System.out.print("Podaj liczbę: ");
+        liczba4 = scanner.nextInt();
+    }
+
+    if (ilosc4 > 0) {
+
+        int sumaMinMax4 = najmniejsza4 + najwieksza4;
+        double srednia4 = (double) suma4 / ilosc4;
+
+        System.out.println("Najmniejsza liczba: " + najmniejsza4);
+        System.out.println("Największa liczba: " + najwieksza4);
+        System.out.println("Suma najmniejszej i największej: " + sumaMinMax4);
+        System.out.println("Średnia arytmetyczna: " + srednia4);
+
+    } else {
+
+        System.out.println("Nie podano żadnych liczb.");
+    }
+
+    //Zadanie5
+    System.out.println("Zadanie 5");
+
+    int wylosowana5 = (int) (Math.random() * 100) + 1;
+    int podana5;
+
+    System.out.println("Zgadnij liczbę od 1 do 100.");
+
+    podana5 = scanner.nextInt();
+
+    while (podana5 != wylosowana5) {
+
+        if (podana5 > wylosowana5) {
+            System.out.println("Podałeś za dużą wartość");
+        }
+
+        if (podana5 < wylosowana5) {
+            System.out.println("Podałeś za małą wartość");
+        }
+
+        podana5 = scanner.nextInt();
+    }
+
+    System.out.println("Gratulacje");
 
 
 
