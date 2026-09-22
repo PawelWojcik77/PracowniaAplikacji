@@ -117,6 +117,45 @@ void main() {
 
     System.out.println("Gratulacje");
 
+    //Zadanie6
+    System.out.println("Zadanie 6");
+
+    System.out.print("Podaj znak wypełnienia: ");
+    char znak6 = scanner.next().charAt(0);
+
+    System.out.print("Podaj x: ");
+    int x6 = scanner.nextInt();
+
+    System.out.print("Podaj y: ");
+    int y6 = scanner.nextInt();
+
+    System.out.print("Podaj długość a: ");
+    int a6 = scanner.nextInt();
+
+    System.out.print("Podaj długość b: ");
+    int b6 = scanner.nextInt();
+
+
+    for (int wiersz6 = 1; wiersz6 < y6; wiersz6++) {
+        System.out.println();
+    }
+
+
+    for (int wiersz6 = 1; wiersz6 <= b6; wiersz6++) {
+
+
+        for (int spacja6 = 1; spacja6 < x6; spacja6++) {
+            System.out.print(" ");
+        }
+
+
+        for (int znakWiersz6 = 1; znakWiersz6 <= a6; znakWiersz6++) {
+            System.out.print(znak6);
+        }
+
+        System.out.println();
+    }
+
 
 
 }
