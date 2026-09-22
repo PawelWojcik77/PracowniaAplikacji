@@ -194,4 +194,22 @@ void main() {
 
 
 
+    //Zadanie10
+    System.out.println("Zadanie 10");
+    petlaGlowna10:
+    for (int i10 = 1; i10 <= 10; i10++) {
+        if (i10 % 2 != 0) {
+            continue;
+        }
+        for (int j10 = 1; j10 <= 10; j10++) {
+            System.out.println(j10);
+            if (j10 > i10) {
+                continue petlaGlowna10;
+            }
+        }
+    }
+
+
+
+
 }
