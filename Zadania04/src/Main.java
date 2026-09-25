@@ -30,7 +30,19 @@ void main() {
     }
     System.out.println("Najwieksza liczba: " + najwieksza);
     System.out.println();
+
+
+    //Zadanie3
+    System.out.println("zadanie3");
+    String[] tablica3 = {"kot", "pies", "słoń"};
+    for (String slowo : tablica3) {
+        System.out.println(slowo.toUpperCase());
+    }
+    System.out.println();
 }
+
+
+
 
 
 
