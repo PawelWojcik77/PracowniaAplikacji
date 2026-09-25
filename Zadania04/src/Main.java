@@ -39,7 +39,30 @@ void main() {
         System.out.println(slowo.toUpperCase());
     }
     System.out.println();
+
+
+    //Zadanie4
+    System.out.println("Zadanie4");
+    Scanner scanner = new Scanner(System.in);
+    String[] slowa = new String[5];
+    for (int i = 0; i < slowa.length; i++) {
+        System.out.println("Podaj slowo:");
+        slowa[i] = scanner.nextLine();
+    }
+    System.out.println("Slowa od konca:");
+    for (int i = slowa.length - 1; i >= 0; i--) {
+        String slowo = slowa[i];
+        for (int j = slowo.length() - 1; j >= 0; j--) {
+            System.out.print(slowo.charAt(j));
+        }
+        System.out.println();
+    }
+    System.out.println();
+
+
 }
+
+
 
 
 
