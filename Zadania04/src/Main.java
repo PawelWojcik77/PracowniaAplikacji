@@ -17,6 +17,25 @@ void main() {
         System.out.println(tablica2[i]);
     }
     System.out.println();
+
+
+    //Zadanie2
+    System.out.println("Zadanie2");
+    int[] tablica = {2, 5, 1, 37, 8, 15};
+    int najwieksza = tablica[0];
+    for (int i = 1; i < tablica.length; i++) {
+        if (tablica[i] > najwieksza) {
+            najwieksza = tablica[i];
+        }
+    }
+    System.out.println("Najwieksza liczba: " + najwieksza);
+    System.out.println();
 }
+
+
+
+
+
+
 
 
