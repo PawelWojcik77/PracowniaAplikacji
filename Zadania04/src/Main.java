@@ -60,7 +60,35 @@ void main() {
     System.out.println();
 
 
+    //Zadanie5
+    System.out.println("Zadanie5");
+    Scanner scanner1 = new Scanner(System.in);
+    int[] liczby = new int[8];
+    for (int i = 0; i < liczby.length; i++) {
+        System.out.println("Podaj liczbe:");
+        liczby[i] = scanner.nextInt();
+    }
+    for (int i = 0; i < liczby.length - 1; i++) {
+        for (int j = 0; j < liczby.length - 1; j++) {
+            if (liczby[j] > liczby[j + 1]) {
+                int pomocnicza = liczby[j];
+                liczby[j] = liczby[j + 1];
+                liczby[j + 1] = pomocnicza;
+            }
+        }
+    }
+    System.out.println("Posortowana tablica:");
+    for (int i = 0; i < liczby.length; i++) {
+        System.out.print(liczby[i] + " ");
+    }
+    System.out.println();
+    System.out.println();
 }
+
+
+
+
+
 
 
 
