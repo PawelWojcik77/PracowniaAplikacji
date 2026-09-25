@@ -3,11 +3,20 @@
 void main() {
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+    System.out.println("Zadanie1");
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+    int[] tablica1 = {1, 2, 3, 4, 5, 6};
+    int[] tablica2 = {10, 20, 30, 40, 50};
+
+    System.out.println("Pierwsza tablica:");
+    for (int i = 0; i < tablica1.length; i += 2) {
+        System.out.println(tablica1[i]);
     }
+    System.out.println("Druga tablica:");
+    for (int i = 0; i < tablica2.length; i += 2) {
+        System.out.println(tablica2[i]);
+    }
+    System.out.println();
 }
+
+
