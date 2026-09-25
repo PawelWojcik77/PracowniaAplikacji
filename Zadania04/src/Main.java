@@ -83,7 +83,28 @@ void main() {
     }
     System.out.println();
     System.out.println();
+
+
+    //zadanie6
+    System.out.println("zadanie6");
+    Scanner scanner2 = new Scanner(System.in);
+    int[] liczby6 = new int[5];
+    for (int i = 0; i < liczby.length; i++) {
+        System.out.println("Podaj liczbe:");
+        liczby[i] = scanner.nextInt();
+    }
+    for (int i = 0; i < liczby.length; i++) {
+        int silnia = 1;
+        for (int j = 1; j <= liczby[i]; j++) {
+            silnia = silnia * j;
+        }
+        System.out.println(liczby[i] + "! = " + silnia);
+    }
+    System.out.println();
 }
+
+
+
 
 
 
