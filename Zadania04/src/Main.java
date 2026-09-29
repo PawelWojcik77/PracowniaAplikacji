@@ -193,6 +193,35 @@ void main() {
 
 
 
+    //Zadanie9
+    System.out.println("Zadanie9");
+    int[] tablica9 = new int[20];
+    for (int i = 0; i < tablica9.length; i++) {
+        tablica9[i] = random.nextInt(10) + 1;
+    }
+
+
+    System.out.println("Tablica:");
+    for (int i = 0; i < tablica9.length; i++) {
+        System.out.print(tablica9[i] + " ");
+    }
+    System.out.println();
+    System.out.println();
+
+
+
+    for (int liczba = 1; liczba <= 10; liczba++) {
+        int ile = 0;
+        for (int i = 0; i < tablica9.length; i++) {
+            if (tablica9[i] == liczba) {
+                ile++;
+            }
+        }
+        System.out.println("Liczba " + liczba + " wystepuje " + ile + " razy.");
+    }
+
+
+
 
 }
 
