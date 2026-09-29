@@ -120,6 +120,80 @@ void main() {
     }
     System.out.println();
 
+
+
+    //Zadanie8
+    System.out.println("Zadanie8");
+    int[] tablica8 = new int[10];
+    Random random = new Random();
+
+    for (int i = 0; i < tablica8.length; i++) {
+        tablica8[i] = random.nextInt(21) - 10;
+    }
+
+    System.out.println("Tablica:");
+    for (int i = 0; i < tablica8.length; i++) {
+        System.out.print(tablica8[i] + " ");
+    }
+    System.out.println();
+
+
+
+    int min = tablica8[0];
+    int max = tablica8[0];
+    for (int i = 1; i < tablica8.length; i++) {
+        if (tablica8[i] < min) {
+            min = tablica8[i];
+        }
+        if (tablica8[i] > max) {
+            max = tablica8[i];
+        }
+    }
+
+
+
+    int suma = 0;
+    for (int i = 0; i < tablica8.length; i++) {
+        suma = suma + tablica8[i];
+    }
+
+
+
+    double srednia = (double) suma / tablica8.length;
+
+
+
+    int mniejsze = 0;
+    int wieksze = 0;
+    for (int i = 0; i < tablica8.length; i++) {
+        if (tablica8[i] < srednia) {
+            mniejsze++;
+        }
+        if (tablica8[i] > srednia) {
+            wieksze++;
+        }
+    }
+
+
+
+    System.out.println("Najmniejszy element: " + min);
+    System.out.println("Najwiekszy element: " + max);
+    System.out.println("Srednia: " + srednia);
+    System.out.println("Elementow mniejszych od sredniej: " + mniejsze);
+    System.out.println("Elementow wiekszych od sredniej: " + wieksze);
+
+
+
+    System.out.println("Tablica od konca:");
+    for (int i = tablica8.length - 1; i >= 0; i--) {
+        System.out.print(tablica8[i] + " ");
+    }
+    System.out.println();
+    System.out.println();
+
+
+
+
 }
 
 
