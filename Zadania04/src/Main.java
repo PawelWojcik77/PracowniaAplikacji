@@ -93,7 +93,7 @@ void main() {
         System.out.println("Podaj liczbe:");
         liczby[i] = scanner.nextInt();
     }
-    for (int i = 0; i < liczby.length; i++) {
+    for (int i = 0; i < liczby6.length; i++) {
         int silnia = 1;
         for (int j = 1; j <= liczby[i]; j++) {
             silnia = silnia * j;
@@ -101,6 +101,25 @@ void main() {
         System.out.println(liczby[i] + "! = " + silnia);
     }
     System.out.println();
+
+
+    //Zadanie7
+    System.out.println("Zadanie7");
+    String[] tablica7a = {"Ala", "Ola", "Jan", "Kasia"};
+    String[] tablica7b = {"Ala", "Ola", "Jan", "Kasia"};
+    boolean takieSame = true;
+    for (int i = 0; i < tablica7a.length; i++) {
+        if (!tablica7a[i].equals(tablica7b[i])) {
+            takieSame = false;
+        }
+    }
+    if (takieSame) {
+        System.out.println("Tablice sa takie same.");
+    } else {
+        System.out.println("Tablice nie sa takie same.");
+    }
+    System.out.println();
+
 }
 
 
