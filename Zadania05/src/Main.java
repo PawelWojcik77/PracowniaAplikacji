@@ -20,6 +20,11 @@ void main() {
     System.out.println("Zadanie 5:");
     System.out.println(czyPodzielnaPrzez3i5(15));
 
+
+    //Zadanie 6
+    System.out.println("Zadanie 6:");
+    System.out.println(potegaTrzecia(3));
+
 }
 
 int mojWiek() {
@@ -49,3 +54,9 @@ void obliczenia(int liczba1, int liczba2) {
     static boolean czyPodzielnaPrzez3i5(int liczba) {
         return liczba % 3 == 0 && liczba % 5 == 0;
     }
+
+static double potegaTrzecia(double liczba) {
+    return liczba * liczba * liczba;
+}
+
+
