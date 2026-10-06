@@ -25,6 +25,12 @@ void main() {
     System.out.println("Zadanie 6:");
     System.out.println(potegaTrzecia(3));
 
+
+    //Zadanie 7
+    System.out.println("Zadanie 7:");
+    System.out.println(pierwiastek(25));
+
+
 }
 
 int mojWiek() {
@@ -57,6 +63,11 @@ void obliczenia(int liczba1, int liczba2) {
 
 static double potegaTrzecia(double liczba) {
     return liczba * liczba * liczba;
+}
+
+
+static double pierwiastek(double liczba) {
+    return Math.sqrt(liczba);
 }
 
 
