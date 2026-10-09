@@ -52,6 +52,11 @@ void main() {
     System.out.println(sumaTablicy(liczby));
 
 
+    //Zadanie 12
+    System.out.println("Zadanie 12:");
+    int liczbaLiterA = zliczWystapienia("Ala ma kota", 'a');
+    System.out.println(liczbaLiterA);
+
 }
 
 int mojWiek() {
@@ -129,6 +134,18 @@ static int sumaTablicy(int[] tablica) {
         suma = suma + tablica[i];
     }
     return suma;
+}
+
+
+
+static int zliczWystapienia(String tekst, char znak) {
+    int liczbaWystapien = 0;
+    for (int i = 0; i < tekst.length(); i++) {
+        if (tekst.charAt(i) == znak) {
+            liczbaWystapien++;
+        }
+    }
+    return liczbaWystapien;
 }
 
 
