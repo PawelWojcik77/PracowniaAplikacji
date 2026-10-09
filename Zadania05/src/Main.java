@@ -36,6 +36,11 @@ void main() {
     System.out.println(czyTrojkatProstokatny(3, 4, 5));
 
 
+    //Zadanie 9
+    System.out.println("Zadanie 9:");
+    System.out.println(ostatniZnak("Witaj"));
+
+
 }
 
 int mojWiek() {
@@ -89,6 +94,12 @@ static boolean czyTrojkatProstokatny(double a, double b, double c) {
 
     return c * c == a * a + b * b;
 }
+
+
+static char ostatniZnak(String tekst) {
+    return tekst.charAt(tekst.length() - 1);
+}
+
 
 
 
