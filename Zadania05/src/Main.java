@@ -41,6 +41,11 @@ void main() {
     System.out.println(ostatniZnak("Witaj"));
 
 
+    //Zadanie 10
+    System.out.println("Zadanie 10:");
+    System.out.println(czyPalindrom("kajak"));
+
+
 }
 
 int mojWiek() {
@@ -87,11 +92,9 @@ static boolean czyTrojkatProstokatny(double a, double b, double c) {
     if (a >= b && a >= c) {
         return a * a == b * b + c * c;
     }
-
     if (b >= a && b >= c) {
         return b * b == a * a + c * c;
     }
-
     return c * c == a * a + b * b;
 }
 
@@ -99,6 +102,20 @@ static boolean czyTrojkatProstokatny(double a, double b, double c) {
 static char ostatniZnak(String tekst) {
     return tekst.charAt(tekst.length() - 1);
 }
+
+
+
+static boolean czyPalindrom(String tekst) {
+    tekst = tekst.toLowerCase();
+    for (int i = 0; i < tekst.length() / 2; i++) {
+        if (tekst.charAt(i) != tekst.charAt(tekst.length() - 1 - i)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
 
 
 
