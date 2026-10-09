@@ -31,6 +31,11 @@ void main() {
     System.out.println(pierwiastek(25));
 
 
+    //Zadanie 8
+    System.out.println("Zadanie 8:");
+    System.out.println(czyTrojkatProstokatny(3, 4, 5));
+
+
 }
 
 int mojWiek() {
@@ -69,5 +74,21 @@ static double potegaTrzecia(double liczba) {
 static double pierwiastek(double liczba) {
     return Math.sqrt(liczba);
 }
+
+
+
+static boolean czyTrojkatProstokatny(double a, double b, double c) {
+
+    if (a >= b && a >= c) {
+        return a * a == b * b + c * c;
+    }
+
+    if (b >= a && b >= c) {
+        return b * b == a * a + c * c;
+    }
+
+    return c * c == a * a + b * b;
+}
+
 
 
