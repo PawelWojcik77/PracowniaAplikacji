@@ -46,6 +46,12 @@ void main() {
     System.out.println(czyPalindrom("kajak"));
 
 
+    //Zadanie 11
+    System.out.println("Zadanie 11:");
+    int[] liczby = {1, 7, 20, 100};
+    System.out.println(sumaTablicy(liczby));
+
+
 }
 
 int mojWiek() {
@@ -114,6 +120,17 @@ static boolean czyPalindrom(String tekst) {
     }
     return true;
 }
+
+
+
+static int sumaTablicy(int[] tablica) {
+    int suma = 0;
+    for (int i = 0; i < tablica.length; i++) {
+        suma = suma + tablica[i];
+    }
+    return suma;
+}
+
 
 
 
